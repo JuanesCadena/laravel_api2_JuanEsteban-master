@@ -58,7 +58,6 @@ class PeticioneController extends Controller
 
         ]);
         $input = $request->all();
-
         $category = Categoria::findOrFail($request->input('categoria_id'));
         $user = Auth::user();
         $user = User::findOrFail($user->id);
